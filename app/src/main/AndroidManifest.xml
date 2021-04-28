@@ -19,6 +19,7 @@
 
         <activity android:name=".activity.XfermodeActivity"/>
         <activity android:name=".activity.pinActivity"/>
+        <activity android:name=".activity.HookActivity"/>
     </application>
 
 </manifest>
