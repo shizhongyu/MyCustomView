@@ -8,12 +8,13 @@ import android.widget.Button;
 
 import com.example.zhongyu.myapplication.R;
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
     private RecyclerView mRecyclerview;
     private Button mXfermode;
     private Button mHook;
+    private Button mPopUpWindow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 HookActivity.lauch(MainActivity.this, HookActivity.class);
+            }
+        });
+        mPopUpWindow = (Button) findViewById(R.id.popUpWindow);
+        mPopUpWindow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goTo(PopUpWindowActivity.class);
             }
         });
     }

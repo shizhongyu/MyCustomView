@@ -14,7 +14,7 @@ import android.support.v7.app.AppCompatActivity;
  */
 public class CommonActivity extends Activity {
 
-    public static  <T extends Class> void lauch(Context context, T t) {
+    public static void lauch(Context context, Class t) {
         Intent intent = new Intent(context, t);
         context.startActivity(intent);
     }
