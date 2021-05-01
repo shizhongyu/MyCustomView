@@ -1,6 +1,5 @@
 package com.example.zhongyu.myapplication.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -15,6 +14,7 @@ public class MainActivity extends BaseActivity {
     private Button mXfermode;
     private Button mHook;
     private Button mPopUpWindow;
+    private Button mCardview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +43,13 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 goTo(PopUpWindowActivity.class);
+            }
+        });
+        mCardview = (Button) findViewById(R.id.cardview);
+        mCardview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goTo(CardViewActivity.class);
             }
         });
     }

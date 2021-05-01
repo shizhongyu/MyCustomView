@@ -21,6 +21,7 @@
         <activity android:name=".activity.pinActivity"/>
         <activity android:name=".activity.HookActivity"/>
         <activity android:name=".activity.PopUpWindowActivity"/>
+        <activity android:name=".activity.CardViewActivity"/>
     </application>
 
 </manifest>
